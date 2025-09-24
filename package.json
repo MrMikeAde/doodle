@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "cross-env EXPO_NO_TELEMETRY=1 expo start",
     "build:web": "expo export --platform web",
+    "build:android": "expo prebuild --platform android && expo run:android --device",
+    "build:ios": "expo prebuild --platform ios && expo run:ios --device",
     "lint": "expo lint"
   },
   "dependencies": {
